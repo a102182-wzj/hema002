@@ -1,0 +1,55 @@
+import Taro from '@tarojs/taro'
+import { View, Image, OpenData } from '@tarojs/components'
+import { AtList, AtListItem } from 'taro-ui'
+import request from '../../../utils/request'
+import './index.less'
+import cellme from '../../../image/ico/callme.png'
+import ticker1 from '../../../image/ico/ticker1.png'
+import contact from '../../../image/ico/contact.png'
+import question from '../../../image/ico/question.png'
+
+
+export default class My extends Taro.Component {
+
+    config = {
+        navigationBarTitleText: '我的',
+        backgroundColor: '#F8F8F8'
+    }
+
+    componentWillMount = () => {
+        // request.post('https://account.hippokidcare.com/login/verify').then(res=>{
+        //     console.log('res', res)
+        // })
+    }
+
+    render() {
+        return (
+            <View>
+                <View className='avatar-box'>
+                    <OpenData className='avatar-image' mode='aspectFill' type='userAvatarUrl'></OpenData>
+                    <View className='username'>
+                        <OpenData type='userNickName'></OpenData>
+                    </View>
+                </View>
+                <View>
+                    <AtList>
+                        <AtListItem title='我的咨询' arrow='right' thumb={question} />
+                        <AtListItem title='我的优惠券' arrow='right' thumb={ticker1} />
+                    </AtList>
+                </View>
+                <View className='space'></View>
+                <View>
+                    <AtList>
+                        <AtListItem title='联系我们' arrow='right' thumb={cellme} />
+                    </AtList>
+                </View>
+                <View className='space'></View>
+                <View>
+                    <AtList>
+                        <AtListItem title='在线反馈' arrow='right' thumb={contact} />
+                    </AtList>
+                </View>
+            </View>
+        )
+    }
+}

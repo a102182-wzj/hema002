@@ -1,0 +1,229 @@
+page {
+  background-color: #EBF0F9;
+  padding-bottom: 20px;
+}
+
+
+
+.banner {
+  width: 100%;
+  background-color: #ecf0fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+
+
+/* 顶部快问部分 */
+
+.topButton {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.topButton view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.topButton-out {
+  width: 320px;
+  height: 320px;
+  border-radius: 320px;
+  background-color: #fff1f0;
+}
+
+.topButton-mid {
+  width: 245px;
+  height: 245px;
+  border-radius: 245px;
+  background-color: #fed9d3;
+}
+
+.topButton-inside {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: #ee857e;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0 0 12px rgb(214, 22, 22);
+}
+
+.topButton-rocket,
+.topButton-star1,
+.topButton-star2,
+.topButton-star3,
+.topButton-cloud1,
+.topButton-cloud2,
+.topButton-cloud3 {
+  position: absolute;
+}
+
+.topButton-rocket {
+  width: 140px;
+  height: 140px;
+  left: 50px;
+}
+
+.topButton-star1,
+.topButton-star2,
+.topButton-star3 {
+  width: 50px;
+  height: 50px;
+  left: 560px;
+  top: 60px;
+}
+
+.topButton-star2,
+.topButton-star3 {
+  transform: scale(0.5);
+  left: 650px;
+  top: 160px;
+}
+
+.topButton-star3 {
+  left: 80px;
+  top: 80px;
+}
+
+.topButton-cloud1,
+.topButton-cloud2,
+.topButton-cloud3 {
+  width: 120px;
+  height: 120px;
+  left: 513px;
+  top: 200px;
+}
+
+.topButton-cloud2 {
+  transform: scale(0.8);
+  opacity: 0.5;
+  left: 170px;
+  top: 40px;
+}
+
+.topButton-cloud3 {
+  transform: scale(0.5);
+  left: 155px;
+  top: 220px;
+}
+
+.bannerText {
+  margin: 20px auto;
+  font-size: 32px;
+}
+
+//
+.doctor {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.doctorBox {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.doctorNames {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+.headimgBox {
+  width: 20%;
+}
+
+.headimg {
+  width: 110px;
+  height: 110px;
+  border-radius: 110px;
+  border: 2px solid #cbd9ec;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.count {
+  width: 25%;
+  text-align: right;
+  color: #a3a3a3;
+  font-size: 28px;
+}
+
+.name {
+  font-size: 32px;
+  color: #506180;
+  font-weight: 600;
+}
+
+.reserve1 {
+  font-size: 28px;
+  color: #4F637F;
+  margin-top: 10px;
+}
+
+.content {
+  width: 96%;
+  margin: 10px auto 30px auto;
+  font-size: 28px;
+  color: #b7b7b7;
+  line-height: 150%;
+}
+
+.price {
+  border-top: 2px solid #cfddef;
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+}
+
+.money {
+  float: left;
+  margin-left: 10px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #EE857E;
+}
+
+.Btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 13Px;
+  /* border: 1px solid #f65173; */
+  background-color: #ee857e;
+  border-radius: 50px;
+  color: #fff;
+  border: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+}

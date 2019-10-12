@@ -1,0 +1,23 @@
+.input-panel {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  background: red;
+  width: 100%;
+}
+
+.input-panel .input-input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  height: 50px;
+  min-height: 50px;
+  max-height: 150px;
+}
+
+.input-panel .input-send {
+  position: fixed;
+  bottom: 0;
+}
+
+// .input-tools {}

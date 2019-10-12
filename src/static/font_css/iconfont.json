@@ -1,0 +1,16 @@
+{
+  "id": "1376205",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5648855",
+      "name": "文档",
+      "font_class": "wendang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

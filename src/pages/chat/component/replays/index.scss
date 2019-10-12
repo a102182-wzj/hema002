@@ -1,0 +1,244 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-main-start {
+    justify-content: flex-start;
+}
+
+.flex-main-end {
+    justify-content: flex-end;
+}
+
+.flex-main-center {
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 400;
+}
+
+.bottom {
+    @extend .flex-col;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #e3e3e3;
+    background-color: #fff;
+    // padding: 10px 0 0 0;
+}
+
+.bottom-top {
+    @extend .flex-row;
+    @extend .flex-main-center;
+    width: 100%;
+}
+
+.textarea {
+    width: 80%;
+    margin-left: 10px;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    // line-height: 60px;
+    margin-top: 10px;
+    padding: 3px;
+    font-size: 16Px;
+    max-height: 140px;
+    min-height: 60px;
+    overflow-y: scroll;
+    white-space: pre-line;
+}
+
+.textarea-change {
+    // line-height: 100%;
+    @extend .textarea
+}
+
+.submit {
+    width: 15%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 10px;
+    background-color: #A2BBE1;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12Px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.bottom-bottom {
+    @extend .flex-row;
+    width: 90%;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    margin: 5px 30px 5px 0;
+}
+
+.record-area {
+    position: fixed;
+    bottom: 0;
+    @extend .flex-col;
+    width: 100%;
+    background-color: #fff;
+}
+
+.record-area-top {
+    @extend .flex-col;
+    @extend .flex-main-center;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+}
+
+.record-area-bottom {
+    @extend .flex-row;
+    width: 100%;
+    height: 60px;
+}
+
+.record-area-bottom-button {
+    width: 49.5%;
+    border-right: 2px solid #fff;
+    background-color: #A2BBE1;
+    color: #fff;
+    font-size: 14Px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0;
+}
+
+.record-area-bottom-button::after {
+    border: 0;
+}
+
+.record-area-bottom-buttonr {
+    @extend .record-area-bottom-button;
+    width: 50%;
+    border: 0;
+    background-color: rgb(219, 217, 217);
+    color: rgb(41, 41, 41);
+}
+
+.record-area-bottom-buttonr::after {
+    border: 0;
+}
+
+.record-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 180px;
+    @extend .flex-row;
+    @extend .flex-main-center;
+    align-items: center;
+    background-color: #A2BBE1;
+}
+
+.record-controller {
+    width: 90px;
+    height: 90px;
+}
+
+.record-time {
+    margin-top: 10px;
+    color: #A2BBE3;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+
+}
+
+.full-top {
+    top: 0;
+    width: 100%;
+    height: 80%;
+
+}
+
+.full-bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 250;
+}
+
+.full-textarea {
+    width: 100%;
+    height: 94%;
+    border-top: 2px solid #A2BBE1;
+    border-bottom: 2px solid #A2BBE1;
+    font-size: 16Px;
+    padding: 20px;
+}
+
+.emojiBox {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid #e3e3e3;
+}
+
+.emoji {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.emojiBlock {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.emojiItem {
+    float: left;
+    width: 10%;
+    margin: 1% 2%;
+    text-align: center;
+}
+
+.bot {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botItem {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: 0 10px;
+    background-color: #A2BBE1;
+}
+
+.botItemun {
+    @extend .botItem;
+    background-color: #bbb8b8;
+}
